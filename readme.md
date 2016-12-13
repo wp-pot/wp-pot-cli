@@ -26,6 +26,7 @@ $ wp-pot --help
     --dest-file, -o Destination file
     --domain, -d Domain to retrieve the translated text
     --last-translator, -l Name and email address of the last translator (ex: John Doe <me@example.com>)
+    --relative-to, -r Path to folder that file comments should be relative to
     --src, -s  Source file
     --team, -t Name and email address of the translation team (ex: Team <team@example.com>)
     --package, -p Package name

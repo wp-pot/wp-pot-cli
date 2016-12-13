@@ -12,6 +12,7 @@ const cli = meow(`
       --dest-file, -o Destination file
       --domain, -d Domain to retrieve the translated text
       --last-translator, -l Name and email address of the last translator (ex: John Doe <me@example.com>)
+      --relative-to, -r Path to folder that file comments should be relative to
       --src, -s  Source file
       --team, -t Name and email address of the translation team (ex: Team <team@example.com>)
       --package, -p Package name
@@ -26,8 +27,9 @@ const cli = meow(`
     d: 'domain',
     l: 'last-translator',
     o: 'dest-file',
-    t: 'team',
+    r: 'relative-to',
     s: 'src',
+    t: 'team',
     p: 'package',
     w: 'write-file'
   }
@@ -45,6 +47,7 @@ let content = wpPot({
   domain: cli.flags.domain,
   commentKeyword: cli.flags.commentKeyword,
   lastTranslator: cli.flags.lastTranslator,
+  relativeTo: cli.flags.relativeTo,
   package: cli.flags.package,
   src: cli.flags.src,
   team: cli.flags.team,
