@@ -42,9 +42,11 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "istanbul": "^0.4.5",
-    "mocha": "^3.0.0"
+    "mocha": "^3.0.0",
+    "execa": "^0.5.0"
   },
   "dependencies": {
+    "meow": "^3.7.0",
     "wp-pot": "^0.0.1"
   }
 }
