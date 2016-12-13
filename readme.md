@@ -1,5 +1,7 @@
 # wp-pot-cli [![Build Status](https://travis-ci.org/rasmusbe/wp-pot-cli.svg?branch=master)](https://travis-ci.org/rasmusbe/wp-pot-cli)
 
+> Generate pot file for WordPress plugins and themes
+
 ## Install
 
 ```
