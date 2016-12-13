@@ -21,6 +21,7 @@ $ wp-pot --help
     $ wp-pot <input>
 
   Options
+    --bug-report, -b Header with URL for reporting translation bugs
     --comment-keyword, -c Comment keyword
     --dest-file, -o Destination file
     --domain, -d Domain to retrieve the translated text

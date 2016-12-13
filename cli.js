@@ -7,6 +7,7 @@ const cli = meow(`
       $ wp-pot <input>
 
     Options
+      --bug-report, -b Header with URL for reporting translation bugs
       --comment-keyword, -c Comment keyword
       --dest-file, -o Destination file
       --domain, -d Domain to retrieve the translated text
@@ -20,6 +21,7 @@ const cli = meow(`
       $ wp-pot --src 'src/*.php'
 `, {
   alias: {
+    b: 'bug-report',
     c: 'comment-keyword',
     d: 'domain',
     l: 'last-translator',
@@ -38,6 +40,7 @@ if (!cli.flags.destFile && cli.flags.writeFile) {
 }
 
 let content = wpPot({
+  bugReport: cli.flags.blugReport,
   destFile: cli.flags.destFile,
   domain: cli.flags.domain,
   commentKeyword: cli.flags.commentKeyword,
