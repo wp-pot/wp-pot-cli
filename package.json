@@ -45,6 +45,6 @@
     "mocha": "^3.0.0"
   },
   "dependencies": {
-    "wp-pot": "^0.0.1"
+    "wp-pot": "^0.0.2"
   }
 }
