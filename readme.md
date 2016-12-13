@@ -24,7 +24,9 @@ $ wp-pot --help
     --comment-keyword, -c Comment keyword
     --dest-file, -o Destination file
     --domain, -d Domain to retrieve the translated text
+    --last-translator, -l Name and email address of the last translator (ex: John Doe <me@example.com>)
     --src, -s  Source file
+    --team, -t Name and email address of the translation team (ex: Team <team@example.com>)
     --package, -p Package name
     --write-file, -w Write file
 
