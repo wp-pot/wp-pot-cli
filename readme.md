@@ -1,8 +1,4 @@
-# wp-pot-cli
-
-## Information
-
-[![Build Status](https://travis-ci.org/rasmusbe/wp-pot-cli.svg?branch=master)](https://travis-ci.org/rasmusbe/wp-pot-cli)
+# wp-pot-cli [![Build Status](https://travis-ci.org/rasmusbe/wp-pot-cli.svg?branch=master)](https://travis-ci.org/rasmusbe/wp-pot-cli)
 
 ## Install
 
