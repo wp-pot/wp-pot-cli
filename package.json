@@ -1,0 +1,50 @@
+{
+  "name": "wp-pot-cli",
+  "version": "1.0.0-0",
+  "description": "Generate pot-files for WordPress localization via cli",
+  "license": "MIT",
+  "repository": "rasmusbe/wp-pot-cli",
+  "author": {
+    "name": "Rasmus Bengtsson",
+    "email": "gulp-wp-pot@rasmusbengtsson.se",
+    "url": "https://github.com/rasmusbe"
+  },
+  "contributors": [
+    {
+      "name": "Fredrik Forsmo",
+      "email": "fredrik.forsmo@gmail.com",
+      "url": "https://github.com/frozzare"
+    }
+  ],
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "npm run test-cs && npm run test-mocha",
+    "test-cs": "eslint .",
+    "test-mocha": "mocha",
+    "cover": "istanbul cover --report clover --report lcov _mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "pot",
+    "wordpress",
+    "translation"
+  ],
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.0"
+  },
+  "dependencies": {
+    "wp-pot": "^0.0.1"
+  }
+}
