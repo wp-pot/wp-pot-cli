@@ -4,7 +4,7 @@ const meow = require('meow');
 const wpPot = require('wp-pot');
 const cli = meow(`
     Usage
-      $ wp-pot <input>
+      $ wp-pot <options>
 
     Options
       --bug-report, -b Header with URL for reporting translation bugs

@@ -18,7 +18,7 @@ $ wp-pot --help
   Generate pot-files for WordPress localization
 
   Usage
-    $ wp-pot <input>
+    $ wp-pot <options>
 
   Options
     --bug-report, -b Header with URL for reporting translation bugs
