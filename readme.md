@@ -38,6 +38,7 @@ $ wp-pot --help
 
 ## Related
 
+- [gulp-wp-pot](https://github.com/rasmusbe/gulp-wp-pot) - Run wp-pot with gulp
 - [wp-pot](https://github.com/rasmusbe/wp-pot) - API for this module
 
 ## License
