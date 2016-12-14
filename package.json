@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "meow": "^3.7.0",
-    "wp-pot": "^0.0.2"
+    "wp-pot": "^1.0.0"
   },
   "bin": {
     "wp-pot": "./cli.js"
