@@ -41,18 +41,7 @@ if (!cli.flags.destFile && cli.flags.writeFile) {
   process.exit(1);
 }
 
-let content = wpPot({
-  bugReport: cli.flags.blugReport,
-  destFile: cli.flags.destFile,
-  domain: cli.flags.domain,
-  commentKeyword: cli.flags.commentKeyword,
-  lastTranslator: cli.flags.lastTranslator,
-  relativeTo: cli.flags.relativeTo,
-  package: cli.flags.package,
-  src: cli.flags.src,
-  team: cli.flags.team,
-  writeFile: cli.flags.writeFile
-});
+let content = wpPot(cli.flags);
 
 // Output content if we shouldn't write a file.
 if (!cli.flags.writeFile) {
