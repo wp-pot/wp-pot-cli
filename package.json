@@ -28,7 +28,7 @@
     "test-mocha": "mocha"
   },
   "files": [
-    "index.js"
+    "cli.js"
   ],
   "keywords": [
     "cli-app",
@@ -49,5 +49,8 @@
   "dependencies": {
     "meow": "^3.7.0",
     "wp-pot": "^0.0.2"
+  },
+  "bin": {
+    "wp-pot": "./cli.js"
   }
 }
