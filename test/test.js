@@ -3,20 +3,35 @@
 'use strict';
 
 const execa = require('execa');
-const assert = require('assert');
+const os = require('os');
+const fs = require('fs');
+
+const testHelper = require('./test-helper');
+const fixturePath = 'test/fixtures/valid-functions.php';
 
 describe('Test CLI output', function () {
-  it('should output pot strings', function (done) {
-    execa.shell('./cli.js --src test/fixtures/comments.php').then(function (result) {
-      assert(true, result.stdout.indexOf('"X-Poedit-SourceCharset: UTF-8\n"') !== -1);
-      assert(true, result.stdout.indexOf('Comment with other keyword') !== -1);
-      done();
+  it('should output pot strings when write is false', function (done) {
+    execa.shell(`./cli.js --no-write-file --src ${fixturePath}`).then(function (result) {
+      const potContents = result.stdout.toString();
+      try {
+        testHelper.testValidFunctions(potContents, fixturePath);
+        done();
+      } catch (e) {
+        done(e);
+      }
     });
   });
-  it('should output error when destination file is empty and write file is true', function (done) {
-    execa.shell('./cli.js --write-file true').catch(function (result) {
-      assert('Destination file flag is empty', result);
-      done();
+
+  it('should write pot file to dest-file path', function (done) {
+    const tempPot = `${os.tmpdir()}/test.pot`;
+    execa.shell(`./cli.js --dest-file ${tempPot} --src ${fixturePath}`).then(function () {
+      try {
+        const potContents = fs.readFileSync(tempPot).toString();
+        testHelper.testValidFunctions(potContents, fixturePath);
+        done();
+      } catch (e) {
+        done(e);
+      }
     });
   });
 });

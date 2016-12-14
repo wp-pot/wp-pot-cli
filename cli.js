@@ -7,16 +7,17 @@ const cli = meow(`
       $ wp-pot <options>
 
     Options
-      --bug-report, -b Header with URL for reporting translation bugs
-      --comment-keyword, -c Comment keyword
-      --dest-file, -o Destination file
-      --domain, -d Domain to retrieve the translated text
-      --last-translator, -l Name and email address of the last translator (ex: John Doe <me@example.com>)
-      --relative-to, -r Path to folder that file comments should be relative to
-      --src, -s  Source files
-      --team, -t Name and email address of the translation team (ex: Team <team@example.com>)
-      --package, -p Package name
-      --write-file, -w Write file
+      --bug-report       -b        Header with URL for reporting translation bugs
+      --comment-keyword  -c        Comment keyword
+      --dest-file        -o        Destination file
+      --domain           -d        Domain to retrieve the translated text
+      --last-translator  -l        Name and email address of the last translator (ex: John Doe <me@example.com>)
+      --relative-to      -r        Path to folder that file comments should be relative to
+      --src              -s        Source files
+      --team             -t        Name and email address of the translation team (ex: Team <team@example.com>)
+      --package          -p        Package name
+      --write-file       -w        Write file
+      --no-write-file    -w=false  Don't write file
 
     Examples
       $ wp-pot --src 'src/*.php'
@@ -32,18 +33,15 @@ const cli = meow(`
     t: 'team',
     p: 'package',
     w: 'write-file'
-  }
+  },
+  default: {
+    writeFile: true
+  },
+  boolean: ['write-file']
 });
 
-// Destination file cannot be empty if write file is true.
-if (!cli.flags.destFile && cli.flags.writeFile) {
-  console.log('Destination file flag is empty');
-  process.exit(1);
-}
-
 let content = wpPot(cli.flags);
-
 // Output content if we shouldn't write a file.
 if (!cli.flags.writeFile) {
-  console.log(content);
+  process.stdout.write(content);
 }
