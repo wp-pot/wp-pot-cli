@@ -38,16 +38,18 @@
     "translation"
   ],
   "devDependencies": {
-    "eslint": "^3.11.1",
+    "eslint": "^3.19.0",
     "eslint-config-semistandard": "^8.0.0",
-    "eslint-config-standard": "^7.0.0",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "mocha": "^3.0.0",
-    "execa": "^0.6.0"
+    "eslint-config-standard": "^10.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "execa": "^0.6.3",
+    "mocha": "^3.0.0"
   },
   "dependencies": {
     "meow": "^3.7.0",
-    "wp-pot": "^1.1.4"
+    "wp-pot": "^1.1.5"
   }
 }
