@@ -40,16 +40,16 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-semistandard": "^11.0.0",
-    "eslint-config-standard": "^10.2.0",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "execa": "^0.6.3",
-    "mocha": "^3.0.0"
+    "mocha": "^3.4.2"
   },
   "dependencies": {
     "meow": "^3.7.0",
-    "wp-pot": "^1.1.5"
+    "wp-pot": "^1.2.0"
   }
 }
