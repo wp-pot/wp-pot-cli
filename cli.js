@@ -2,7 +2,8 @@
 
 const meow = require('meow');
 const wpPot = require('wp-pot');
-const cli = meow(`
+
+const helpText = `
     Usage
       $ wp-pot <options>
 
@@ -21,7 +22,8 @@ const cli = meow(`
 
     Examples
       $ wp-pot --src 'src/*.php'
-`, {
+`;
+const cli = meow(helpText, {
   alias: {
     b: 'bug-report',
     c: 'comment-keyword',
@@ -40,7 +42,7 @@ const cli = meow(`
   boolean: ['write-file']
 });
 
-let content = wpPot(cli.flags);
+const content = wpPot(cli.flags);
 // Output content if we shouldn't write a file.
 if (!cli.flags.writeFile) {
   process.stdout.write(content);

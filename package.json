@@ -25,6 +25,7 @@
   "scripts": {
     "test": "npm run test-cs && npm run test-mocha",
     "test-cs": "eslint .",
+    "fix-cs": "eslint . --fix",
     "test-mocha": "mocha"
   },
   "files": [
