@@ -18,6 +18,7 @@ const helpText = `
       --team             -t        Name and email address of the translation team (ex: Team <team@example.com>)
       --package          -p        Package name
       --write-file       -w        Write file
+      --no-file-paths              Don't write file paths to pot file
       --no-write-file    -w=false  Don't write file
 
     Examples
@@ -37,10 +38,16 @@ const cli = meow(helpText, {
     w: 'write-file'
   },
   default: {
-    writeFile: true
+    writeFile: true,
+    filePaths: true
   },
-  boolean: ['write-file']
+  boolean: ['write-file', 'file-paths']
 });
+
+if (cli.flags.filePaths === false) {
+  cli.flags.noFilePaths = !cli.flags.filePaths;
+  delete cli.flags.filePaths;
+}
 
 const content = wpPot(cli.flags);
 // Output content if we shouldn't write a file.
