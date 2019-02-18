@@ -48,7 +48,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "execa": "^1.0.0",
     "greenkeeper-lockfile": "^1.15.1",
-    "mocha": "^5.2.0"
+    "mocha": "^6.0.0"
   },
   "dependencies": {
     "meow": "^5.0.0",
