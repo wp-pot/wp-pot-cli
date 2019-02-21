@@ -1,4 +1,4 @@
-# wp-pot-cli [![Build Status](https://travis-ci.org/rasmusbe/wp-pot-cli.svg?branch=master)](https://travis-ci.org/rasmusbe/wp-pot-cli)
+# wp-pot-cli [![Build Status](https://travis-ci.com/rasmusbe/wp-pot-cli.svg?branch=master)](https://travis-ci.com/rasmusbe/wp-pot-cli)
 
 > Generate pot file for WordPress plugins and themes
 
