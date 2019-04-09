@@ -1,4 +1,4 @@
-# wp-pot-cli [![CircleCI](https://circleci.com/gh/rasmusbe/wp-pot-cli/tree/master.svg?style=svg)](https://circleci.com/gh/rasmusbe/wp-pot-cli/tree/master)
+# wp-pot-cli [![CircleCI](https://circleci.com/gh/rasmusbe/wp-pot-cli/tree/master.svg?style=svg)](https://circleci.com/gh/rasmusbe/wp-pot-cli/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/rasmusbe/wp-pot-cli.svg)](https://greenkeeper.io/)
 
 > Generate pot file for WordPress plugins and themes
 
