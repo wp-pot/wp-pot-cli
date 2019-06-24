@@ -1,5 +1,4 @@
 /* eslint-env node, mocha */
-/* global describe, it */
 'use strict';
 
 const execa = require('execa');
