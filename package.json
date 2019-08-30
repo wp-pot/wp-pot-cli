@@ -3,10 +3,11 @@
   "version": "1.2.4",
   "description": "Generate pot-files for WordPress localization via cli",
   "license": "MIT",
-  "repository": "rasmusbe/wp-pot-cli",
+  "repository": "https://github.com/wp-pot/wp-pot-cli.git",
+  "homepage": "https://github.com/wp-pot/wp-pot-cli",
+  "bugs": "https://github.com/wp-pot/wp-pot-cli/issues",
   "author": {
     "name": "Rasmus Bengtsson",
-    "email": "gulp-wp-pot@rasmusbengtsson.se",
     "url": "https://github.com/rasmusbe"
   },
   "bin": {
@@ -26,7 +27,8 @@
     "test": "npm run test-cs && npm run test-mocha",
     "test-cs": "eslint .",
     "fix-cs": "eslint . --fix",
-    "test-mocha": "mocha"
+    "test-mocha": "mocha",
+    "cover": "nyc --reporter clover npm run test-mocha"
   },
   "files": [
     "cli.js"
@@ -47,7 +49,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "execa": "^2.0.4",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
   },
   "dependencies": {
     "meow": "^5.0.0",

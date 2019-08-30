@@ -1,4 +1,4 @@
-# wp-pot-cli [![CircleCI](https://circleci.com/gh/rasmusbe/wp-pot-cli/tree/master.svg?style=svg)](https://circleci.com/gh/rasmusbe/wp-pot-cli/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/rasmusbe/wp-pot-cli.svg)](https://greenkeeper.io/)
+# wp-pot-cli [![CircleCI](https://circleci.com/gh/wp-pot/wp-pot-cli/tree/master.svg?style=svg)](https://circleci.com/gh/wp-pot/wp-pot-cli/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/wp-pot/wp-pot-cli.svg)](https://greenkeeper.io/)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwp-pot%2Fwp-pot-cli.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwp-pot%2Fwp-pot-cli?ref=badge_shield)
 
 > Generate pot file for WordPress plugins and themes
@@ -42,8 +42,8 @@ $ wp-pot --help
 
 ## Related
 
-- [gulp-wp-pot](https://github.com/rasmusbe/gulp-wp-pot) - Run wp-pot with gulp
-- [wp-pot](https://github.com/rasmusbe/wp-pot) - API for this module
+- [gulp-wp-pot](https://github.com/wp-pot/gulp-wp-pot) - Run wp-pot with gulp
+- [wp-pot](https://github.com/wp-pot/wp-pot) - API for this module
 
 ## License
 
