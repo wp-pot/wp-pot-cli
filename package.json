@@ -3,10 +3,11 @@
   "version": "1.2.4",
   "description": "Generate pot-files for WordPress localization via cli",
   "license": "MIT",
-  "repository": "rasmusbe/wp-pot-cli",
+  "repository": "https://github.com/wp-pot/wp-pot-cli.git",
+  "homepage": "https://github.com/wp-pot/wp-pot-cli",
+  "bugs": "https://github.com/wp-pot/wp-pot-cli/issues",
   "author": {
     "name": "Rasmus Bengtsson",
-    "email": "gulp-wp-pot@rasmusbengtsson.se",
     "url": "https://github.com/rasmusbe"
   },
   "bin": {
