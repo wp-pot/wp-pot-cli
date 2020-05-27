@@ -1,6 +1,6 @@
 {
   "name": "wp-pot-cli",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Generate pot-files for WordPress localization via cli",
   "license": "MIT",
   "repository": "https://github.com/wp-pot/wp-pot-cli.git",
