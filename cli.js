@@ -41,7 +41,10 @@ const cli = meow(helpText, {
     writeFile: true,
     filePaths: true
   },
-  boolean: ['write-file', 'file-paths']
+  boolean: ['write-file', 'file-paths'],
+  src: {
+    isMultiple: true
+  }
 });
 
 if (cli.flags.filePaths === false) {

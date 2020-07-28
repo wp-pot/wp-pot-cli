@@ -4,6 +4,7 @@
 const execa = require('execa');
 const os = require('os');
 const fs = require('fs');
+const assert = require('assert');
 
 const testHelper = require('./test-helper');
 const fixturePath = 'test/fixtures/valid-functions.php';
@@ -27,6 +28,22 @@ describe('Test CLI output', function () {
       try {
         const potContents = fs.readFileSync(tempPot).toString();
         testHelper.testValidFunctions(potContents, fixturePath);
+        done();
+      } catch (e) {
+        done(e);
+      }
+    });
+  });
+
+  it('should write pot file to dest-file path with multiple src flags', function (done) {
+    const test = assert;
+    const tempPot = `${os.tmpdir()}/test.pot`;
+    const multiFixturePath = 'test/fixtures/multi-functions.php';
+    execa('./cli.js', ['--dest-file', tempPot, '--src', fixturePath, '--src', multiFixturePath]).then(function () {
+      try {
+        const potContents = fs.readFileSync(tempPot).toString();
+        testHelper.testValidFunctions(potContents, fixturePath);
+        test(testHelper.verifyLanguageBlock(potContents, false, multiFixturePath + ':2', 'Multi function return string', false, false));
         done();
       } catch (e) {
         done(e);
