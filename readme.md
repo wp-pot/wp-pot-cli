@@ -1,5 +1,4 @@
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wp-pot/wp-pot-cli/Node%20CI/master)](https://github.com/wp-pot/wp-pot-cli/actions) 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwp-pot%2Fwp-pot-cli.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwp-pot%2Fwp-pot-cli?ref=badge_shield)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wp-pot/wp-pot-cli/Node%20CI/master)](https://github.com/wp-pot/wp-pot-cli/actions)
 
 > Generate pot file for WordPress plugins and themes
 
@@ -48,6 +47,3 @@ $ wp-pot --help
 ## License
 
 MIT © [Rasmus Bengtsson](https://github.com/rasmusbe)
-
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwp-pot%2Fwp-pot-cli.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwp-pot%2Fwp-pot-cli?ref=badge_large)
