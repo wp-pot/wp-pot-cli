@@ -1,12 +1,12 @@
 /* eslint-env node, mocha */
 'use strict';
 
-const execa = require('execa');
-const os = require('os');
-const fs = require('fs');
-const assert = require('assert');
+import execa from 'execa';
+import os from 'os';
+import fs from 'fs';
+import assert from 'assert';
 
-const testHelper = require('./test-helper');
+import { verifyLanguageBlock, testValidFunctions } from './test-helper.js';
 const fixturePath = 'test/fixtures/valid-functions.php';
 
 describe('Test CLI output', function () {
@@ -14,7 +14,7 @@ describe('Test CLI output', function () {
     execa('./cli.js', ['--no-write-file', '--src', fixturePath]).then(function (result) {
       const potContents = result.stdout.toString();
       try {
-        testHelper.testValidFunctions(potContents, fixturePath);
+        testValidFunctions(potContents, fixturePath);
         done();
       } catch (e) {
         done(e);
@@ -27,7 +27,7 @@ describe('Test CLI output', function () {
     execa('./cli.js', ['--dest-file', tempPot, '--src', fixturePath]).then(function () {
       try {
         const potContents = fs.readFileSync(tempPot).toString();
-        testHelper.testValidFunctions(potContents, fixturePath);
+        testValidFunctions(potContents, fixturePath);
         done();
       } catch (e) {
         done(e);
@@ -42,8 +42,8 @@ describe('Test CLI output', function () {
     execa('./cli.js', ['--dest-file', tempPot, '--src', fixturePath, '--src', multiFixturePath]).then(function () {
       try {
         const potContents = fs.readFileSync(tempPot).toString();
-        testHelper.testValidFunctions(potContents, fixturePath);
-        test(testHelper.verifyLanguageBlock(potContents, false, multiFixturePath + ':2', 'Multi function return string', false, false));
+        testValidFunctions(potContents, fixturePath);
+        test(verifyLanguageBlock(potContents, false, multiFixturePath + ':2', 'Multi function return string', false, false));
         done();
       } catch (e) {
         done(e);
