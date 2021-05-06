@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const meow = require('meow');
-const wpPot = require('wp-pot');
+import meow from 'meow';
+import wpPot from 'wp-pot';
 
 const helpText = `
     Usage
@@ -44,7 +44,8 @@ const cli = meow(helpText, {
   boolean: ['write-file', 'file-paths'],
   src: {
     isMultiple: true
-  }
+  },
+  importMeta: import.meta
 });
 
 if (cli.flags.filePaths === false) {

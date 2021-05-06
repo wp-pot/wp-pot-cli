@@ -10,6 +10,8 @@
     "name": "Rasmus Bengtsson",
     "url": "https://github.com/rasmusbe"
   },
+  "exports": "./cli.js",
+  "type": "module",
   "bin": {
     "wp-pot": "./cli.js"
   },
@@ -21,7 +23,7 @@
     }
   ],
   "engines": {
-    "node": ">=10.0"
+    "node": ">=12.17"
   },
   "scripts": {
     "test": "npm run test-cs && npm run test-mocha",
@@ -53,7 +55,7 @@
     "nyc": "15.1.0"
   },
   "dependencies": {
-    "meow": "9.0.0",
+    "meow": "10.0.0",
     "wp-pot": "1.9.8"
   }
 }

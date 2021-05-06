@@ -1,7 +1,7 @@
 /* eslint-env node */
 'use strict';
 
-const assert = require('assert');
+import assert from 'assert';
 
 /**
  * Verify a language block, divided by two new lines
@@ -14,7 +14,7 @@ const assert = require('assert');
  * @param context
  * @return {boolean}
  */
-function verifyLanguageBlock (potContents, comment, fileinfo, msgid, plural, context) {
+export function verifyLanguageBlock (potContents, comment, fileinfo, msgid, plural, context) {
   const blocks = potContents.split('\n\n');
   for (let i = 1; i < blocks.length; i++) {
     const blocklines = blocks[i].split('\n');
@@ -70,7 +70,7 @@ function verifyLanguageBlock (potContents, comment, fileinfo, msgid, plural, con
  * @param fixturePath
  * @param invert
  */
-function testValidFunctions (potContents, fixturePath, invert) {
+export function testValidFunctions (potContents, fixturePath, invert) {
   let test = assert;
 
   if (invert) {
@@ -94,8 +94,3 @@ function testValidFunctions (potContents, fixturePath, invert) {
   test(verifyLanguageBlock(potContents, false, fixturePath + ':14', 'Singular string with context', 'Plural string with context', 'Some context'));
   test(verifyLanguageBlock(potContents, false, fixturePath + ':15', 'Singular string with noop and context', 'Plural string with noop and context', 'Some context'));
 }
-
-module.exports = {
-  verifyLanguageBlock: verifyLanguageBlock,
-  testValidFunctions: testValidFunctions
-};
