@@ -1,7 +1,7 @@
 [licenses]
 # This indicates which are the only licenses that Licensebat will accept.
 # The rest will be flagged as not allowed.
-accepted = ["MIT", "MSC", "BSD", "ISC", "BSD-3-Clause", "Apache-2.0", "BSD-2-Clause", "CC-BY-3.0", "CC0-1.0", "(MIT OR CC0-1.0)"]
+accepted = ["MIT", "MSC", "BSD", "ISC", "BSD-3-Clause", "Apache-2.0", "BSD-2-Clause", "CC-BY-3.0", "CC-BY-4.0", "CC0-1.0", "(MIT OR CC0-1.0)"]
 # This will indicate which licenses are not accepted.
 # The rest will be accepted, except for the unknown licenses or dependencies without licenses.
 # unaccepted = ["LGPL"]
