@@ -27,8 +27,8 @@
   },
   "scripts": {
     "test": "npm run test-cs && npm run test-mocha",
-    "test-cs": "eslint .",
-    "fix-cs": "eslint . --fix",
+    "test-cs": "semistandard .",
+    "fix-cs": "semistandard . --fix",
     "test-mocha": "mocha",
     "cover": "nyc --reporter clover npm run test-mocha"
   },
@@ -43,16 +43,10 @@
     "translation"
   ],
   "devDependencies": {
-    "eslint": "8.0.1",
-    "eslint-config-semistandard": "16.0.0",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.25.2",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "5.1.0",
-    "eslint-plugin-standard": "5.0.0",
     "execa": "5.1.1",
     "mocha": "9.1.3",
-    "nyc": "15.1.0"
+    "nyc": "15.1.0",
+    "semistandard": "^16.0.1"
   },
   "dependencies": {
     "meow": "10.1.1",
