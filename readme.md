@@ -30,13 +30,13 @@ $ wp-pot --help
     --last-translator, -l Name and email address of the last translator (ex: John Doe <me@example.com>)
     --no-file-paths, Don't write file paths to pot file
     --relative-to, -r Path to folder that file comments should be relative to
-    --src, -s  Source files
+    --src, -s  Source files, multiple sources is allowed
     --team, -t Name and email address of the translation team (ex: Team <team@example.com>)
     --package, -p Package name
     --write-file, -w Write file
 
   Examples
-    $ wp-pot --src 'src/*.php'
+    $ wp-pot --src 'src/*.php' --src 'extras/*.php' 
 ```
 
 ## Related
