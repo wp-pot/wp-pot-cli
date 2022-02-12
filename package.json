@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "meow": "10.1.2",
-    "wp-pot": "1.9.9"
+    "wp-pot": "1.10.0"
   }
 }
