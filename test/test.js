@@ -1,7 +1,5 @@
 /* eslint-env node, mocha */
-'use strict';
-
-import execa from 'execa';
+import { execa } from 'execa';
 import os from 'os';
 import fs from 'fs';
 import assert from 'assert';

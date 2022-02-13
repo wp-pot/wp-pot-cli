@@ -1,6 +1,4 @@
 /* eslint-env node */
-'use strict';
-
 import assert from 'assert';
 
 /**
