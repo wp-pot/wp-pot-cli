@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "meow": "10.1.2",
-    "wp-pot": "1.10.1"
+    "wp-pot": "1.10.2"
   },
   "volta": {
     "node": "14.19.1"
