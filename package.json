@@ -46,7 +46,7 @@
     "execa": "6.1.0",
     "mocha": "10.2.0",
     "nyc": "15.1.0",
-    "semistandard": "16.0.1"
+    "semistandard": "17.0.0"
   },
   "dependencies": {
     "meow": "10.1.5",
