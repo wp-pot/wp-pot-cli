@@ -49,7 +49,7 @@
     "semistandard": "16.0.1"
   },
   "dependencies": {
-    "meow": "10.1.5",
+    "meow": "13.1.0",
     "wp-pot": "1.10.2"
   },
   "volta": {
