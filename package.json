@@ -43,7 +43,7 @@
     "translation"
   ],
   "devDependencies": {
-    "execa": "6.1.0",
+    "execa": "9.3.1",
     "mocha": "10.4.0",
     "nyc": "15.1.0",
     "semistandard": "16.0.1"
